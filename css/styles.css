@@ -53,12 +53,49 @@ img {
   width: 300px;
 }
 
-#letter {
+#award {
   display: none;
 }
-/************************************************************************************
+/******************************************************************************
 MEDIA QUERIES
-*************************************************************************************/
+******************************************************************************/
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	header {
+		height: auto;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	#paris {
+		display: none;
+	}
+
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+	#yosemite {
+		width: auto;
+		float: none;
+	}
+
+	#bahamas {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+
+	#paris {
+		width: auto;
+		float: none;
+	}
+
+}
+
 /* for 980px or less */
 @media screen and (max-width: 980px) {
 
@@ -88,41 +125,6 @@ MEDIA QUERIES
 	}
 }
 
-/* for 700px or less */
-@media screen and (max-width: 600px) {
-
-	#yosemite {
-		width: auto;
-		float: none;
-	}
-
-	#bahamas {
-		width: auto;
-		float: none;
-		margin-left: 0px;
-	}
-
-	#paris {
-		width: auto;
-		float: none;
-	}
-
-}
-
-/* for 480px or less */
-@media screen and (max-width: 480px) {
-
-	header {
-		height: auto;
-	}
-	h1 {
-		font-size: 2em;
-	}
-	#paris {
-		display: none;
-	}
-
-}
 
 
 #yosemite {
@@ -134,7 +136,3 @@ MEDIA QUERIES
 header, #yosemite, #bahamas, #paris{
 	margin-bottom: 5px;
 }
-
-/*#pagewrap, header, #content, #middle, #sidebar, footer {
-	border: solid 1px #ccc;
-}*/
