@@ -1,10 +1,11 @@
-## VACATIO REWARD
+## VACATION REWARD
 
 #### HTML, CSS, JAVASCRIPT & JQUERY PRACTICE TEST ON JUNE 03, 2016
 
 #### By Bang Nguyen
 
-## This is a webpage asking users to answer several questions and they can get a free vacation to one of the three destinations.
+## Description
+This is a webpage asking users to answer several questions and they can get a free vacation to one of the three destinations.
 
 ### Link to the webpage
 
