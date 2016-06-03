@@ -1,47 +1,42 @@
-$(document).ready(function(){
-  $("form#survey").submit(function(event){
-    var showInput = $("select#show").val();
-    var actorInput = $("select#actor").val();
-    var foodInput = $("select#food").val();
-    var beverageInput = $("select#beverage").val();
-    var carInput = $("select#car").val();
+$(document).ready(function() {
+  $("#survey form").submit(function(event) {
 
-    $("#results").show();
+    var nameInput = $("input#name").val();
+    // var showInput = $("select#show").val();
+    // var actorInput = $("select#actor").val();
+    // var foodInput = $("select#food").val();
+    // var beverageInput = $("select#beverage").val();
+    // var carInput = $("select#car").val();
+    $(".name").text(nameInput);
+
+    $("#letter").show();
     $("#survey").hide();
-  })
-  event.preventDefault();
-})
+
+    event.preventDefault();
+  });
+});
 
 
-// $(document).ready(function() {
-//   $("form#survey").submit(function(event) {
-//     event.preventDefault();
-//     var nameInput = $("#name").val();
-//     var colorInput = $("#color").val();
-//     var food1Input = $("#food1").val();
-//     var food2Input = $("#food2").val();
-//     var food3Input = $("#food3").val();
-//     var birthdayInput = $("#birthday").val();
-//     var beverageInput = $("input:radio[name=beverage]:checked").val();
-//     var langInput = $("#lang").val();
+// $(document).ready(function(){
 //
-//     $("#results").show();
-//     $("#survey").hide();
+//   $("#nameform form").submit(function(event){
+//     var nameInput = $("input#name").val();
+//     // var showInput = $("select#show").val();
+//     // var actorInput = $("select#actor").val();
+//     // var foodInput = $("select#food").val();
+//     // var beverageInput = $("select#beverage").val();
+//     // var carInput = $("select#car").val();
+//     //
+//     // var vacation1 = Yosemite National Park;
+//     // var vacation2 = Bahamas;
+//     // var vacation3 = Paris;
 //
 //     $(".name").text(nameInput);
-//     $(".food1").text(food1Input);
-//     $(".food2").text(food2Input);
-//     $(".food3").text(food3Input);
-//     $(".birthday").text(birthdayInput);
-//     $(".beverage").text(beverageInput);
-//     $(".lang").text(langInput);
-//     // $(".color").css({
-//     //     "background-color" : colorInput
-//     // });
-//     $(".colorButton").css({
-//         "background-color" : colorInput
-//     });
 //
+//
+//     $("#letter").show();
+//     $("#nameform").hide();
+//     event.preventDefault();
 //   });
 //
 // });

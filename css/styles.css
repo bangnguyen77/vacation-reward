@@ -34,28 +34,28 @@ header {
 	padding: 0 15px;
 }
 #yosemite {
-	/*width: 290px;*/
 	float: left;
 	padding: 5px 15px;
 }
 
 #bahamas {
-	/*width: 294px; /* Account for margins + border values */*/
 	float: left;
 	padding: 5px 15px;
 	margin: 0px 5px 5px 5px;
 }
 
 #paris{
-	/*width: 270px;*/
 	padding: 5px 15px;
 	float: left;
 }
 
 img {
-  width: 250px;
+  width: 300px;
 }
 
+#letter {
+  display: none;
+}
 /************************************************************************************
 MEDIA QUERIES
 *************************************************************************************/
