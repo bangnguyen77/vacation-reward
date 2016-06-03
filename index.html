@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <title>Vacation Reward</title>
+  </head>
+  <body>
+    <div class="jumbotron" >
+      <h1 class="text-center">VACATION REWARD</h1>
+      <p>
+        It is our pleasure to see you visit our website. A DREAM VACATION is
+        awaiting for you. By answering a few questions you will have a chance
+        to vacate at your dream destination for FREE.
+      </p>
+    </div>
+
+    <div class="container">
+      <form id="survey">
+        <label for="show">What TV show do you like most?</label>
+        <select class="form-control" id="show">
+          <option class="placeholder"></option>
+          <option>The Americans</option>
+          <option>American Crime Story</option>
+          <option>Broad City</option>
+        </select>
+
+        <label for="actor">Which Who is your favorite actor/actress?</label>
+        <select class="form-control" id="actor">
+          <option class="placeholder"></option>
+          <option>Robert Downey Jr.</option>
+          <option>Adam Sandler</option>
+          <option>Julianne Moore</option>
+        </select>
+
+        <label for="food">What is your favorite food?</label>
+        <select class="form-control" id="food">
+          <option class="placeholder"></option>
+          <option>Pizza</option>
+          <option>Donut</option>
+          <option>Bagel</option>
+        </select>
+
+        <label for="beverage">Which of these beverages do you prefer?</label>
+        <select class="form-control" id="beverage">
+          <option class="placeholder"></option>
+          <option>Beer</option>
+          <option>Coffee</option>
+          <option>Tea</option>
+        </select>
+
+        <label for="car">Which of these cars do you prefer?</label>
+        <select class="form-control" id="car">
+          <option class="placeholder"></option>
+          <option>Ford</option>
+          <option>Honda</option>
+          <option>Volkswagen</option>
+        </select>
+
+        <button type="submit" class="btn btn-success">Submit for Rewards</button>
+      </form>
+
+      <div id="results">
+        <ul>
+          <li>Your name is <span class="name"></span>.</li>
+          <li class="color">This is your favorite color:  <button class="btn colorButton"></button></li>
+          <li>Your favorite foods are <span class="food1"></span>,<span class="food2"></span>, and <span class="food3"></span>.</li>
+          <li>You were born on <span class="birthday"></span>.</li>
+          <li>You prefer <span class="beverage"></span>.</li>
+          <li>Your favorite front-end dev language is <span class="lang"></span>.</li>
+        </ul>
+      </div>
+    </div>
+
+  </body>
+</html>
