@@ -1,3 +1,9 @@
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #666;
+}
+
 .jumbotron {
   background-color: orange;
 }
@@ -16,3 +22,119 @@
 button {
   margin-top: 10px;
 }
+
+#threecol {
+	padding: 5px;
+	width: 960px;
+	margin: 20px auto;
+}
+
+header {
+	height: 100px;
+	padding: 0 15px;
+}
+#yosemite {
+	/*width: 290px;*/
+	float: left;
+	padding: 5px 15px;
+}
+
+#bahamas {
+	/*width: 294px; /* Account for margins + border values */*/
+	float: left;
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
+}
+
+#paris{
+	/*width: 270px;*/
+	padding: 5px 15px;
+	float: left;
+}
+
+img {
+  width: 250px;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+
+	#threecol {
+		width: 94%;
+	}
+	#yosemite {
+		width: 41%;
+		padding: 1% 4%;
+	}
+	#bahamas {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+
+	#paris {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+
+	header {
+		padding: 1% 4%;
+	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+	#yosemite {
+		width: auto;
+		float: none;
+	}
+
+	#bahamas {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+
+	#paris {
+		width: auto;
+		float: none;
+	}
+
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	header {
+		height: auto;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	#paris {
+		display: none;
+	}
+
+}
+
+
+#yosemite {
+	background: #f8f8f8;
+}
+#paris{
+	background: #f0efef;
+}
+header, #yosemite, #bahamas, #paris{
+	margin-bottom: 5px;
+}
+
+/*#pagewrap, header, #content, #middle, #sidebar, footer {
+	border: solid 1px #ccc;
+}*/
