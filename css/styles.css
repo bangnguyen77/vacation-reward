@@ -1,7 +1,11 @@
 
-body {
+/*body {
   font-family: 'Open Sans', sans-serif;
   color: #666;
+}*/
+
+#award {
+  display: none;
 }
 
 .jumbotron {
@@ -29,6 +33,10 @@ button {
 	margin: 20px auto;
 }
 
+#threecol h1 {
+  text-align: center;
+}
+
 header {
 	height: 100px;
 	padding: 0 15px;
@@ -50,16 +58,13 @@ header {
 }
 
 img {
-  width: 300px;
+  width: 250px;
 }
 
-#award {
-  display: none;
-}
-/******************************************************************************
+
+/************************************************************************************
 MEDIA QUERIES
-******************************************************************************/
-
+*************************************************************************************/
 /* for 480px or less */
 @media screen and (max-width: 480px) {
 
@@ -69,10 +74,18 @@ MEDIA QUERIES
 	h1 {
 		font-size: 2em;
 	}
-	#paris {
-		display: none;
-	}
-
+  #yosemite {
+    width: 30%;
+    float: none;
+  }
+  #bahamas {
+    width: 30%;
+    float: none;
+  }
+  #paris {
+    width: 30%;
+    float: none;
+  }
 }
 
 /* for 700px or less */
@@ -95,6 +108,7 @@ MEDIA QUERIES
 	}
 
 }
+
 
 /* for 980px or less */
 @media screen and (max-width: 980px) {
@@ -124,7 +138,6 @@ MEDIA QUERIES
 		padding: 1% 4%;
 	}
 }
-
 
 
 #yosemite {
