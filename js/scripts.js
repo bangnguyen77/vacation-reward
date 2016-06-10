@@ -1,4 +1,3 @@
-// var vacation1 = Yosemite National Park;
 
 $(document).ready(function() {
   $("#survey form").submit(function(event) {
@@ -11,18 +10,10 @@ $(document).ready(function() {
     var beverageInput = $("select#beverage").val();
     var carInput = $("select#car").val();
 
+    // var vacation1 = Yosemite National Park;
 
     // var vacation2 = bahamas;
     // var vacation3 = paris;
-
-    // if (activities !== "playing" && activities !== "dunes") {
-    //   if (food === "tacos" || personality === "friendly" || activities === "rodeo") {
-    //   $("#houston").show();
-    //   } else if (food === "bagels" || personality === "aggressive" || activities === "walking") {
-    //   $("#nyc").show();
-    // } else {
-    //   $("#canada").show();
-    // }
 
     if (showInput === "The Americans" && actorInput === "Adam Sandler") {
       $("#yosemite").fadeIn();
@@ -32,7 +23,7 @@ $(document).ready(function() {
       $("#survey").hide();
       $("#award").show();
       $(".name").text(nameInput).show();
-      // $(".vacation1").text(vacation1).show();
+      $(".award").text("Yosemite National Park.");
     }
       else if (showInput === "Broad City" && actorInput === "Julianne Moore") {
         $("#yosemite").fadeOut();
@@ -42,7 +33,7 @@ $(document).ready(function() {
         $("#survey").hide();
         $("#award").show();
         $(".name").text(nameInput).show();
-        // $(".award").text(vacation2);
+        $(".award").text("Bahamas.");
       }
         else if (showInput === "American Crime Story" && actorInput === "Robert Downey Jr.") {
           $("#yosemite").fadeOut();
@@ -52,14 +43,14 @@ $(document).ready(function() {
           $("#survey").hide();
           $("#award").show();
           $(".name").text(nameInput).show();
-          $(".award").text(vacation3);
+          $(".award").text("Paris.");
         }
           else {
             $("#survey").hide();
-            $("#award").show().text("You need to watch more advertising!");
+            $("#threecol").hide();
+            $("#advertising").show();
+            $("#award").text("You need to watch more advertising!").show();
           }
-
-
   });
 
 });

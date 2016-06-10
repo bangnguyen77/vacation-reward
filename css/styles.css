@@ -4,7 +4,8 @@
   color: #666;
 }*/
 
-#award {
+#award,
+#advertising {
   display: none;
 }
 
@@ -59,6 +60,10 @@ header {
 
 img {
   width: 250px;
+}
+
+img #advertising {
+  width: 90%;
 }
 
 
