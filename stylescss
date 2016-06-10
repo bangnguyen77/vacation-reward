@@ -1,0 +1,73 @@
+#cleveland, #houston, #nyc, #seattle, #whitesands, #canada {
+  display: none;
+}
+
+.survey-showing {
+  display: none;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: sans-serif;
+}
+
+#myCarousel img {
+  height: 500px;
+  margin: auto;
+}
+
+#carousel {
+  margin-top: 35px;
+  width: 48%;
+}
+
+.carousel-caption {
+  color: black;
+  background-color: #f2f2f2;
+  padding: 2px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+.carousel-caption h3 {
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+
+h1 {
+  font-weight: bold;
+  color: red;
+  margin-right: -100px;
+}
+
+#header h3 {
+  margin-top: 5px;
+  font-style: italic;
+}
+
+#gav {
+  font-weight: bold;
+  color: blue;
+}
+
+#click-here {
+  color: blue;
+  cursor: pointer;
+}
+
+#click-here:hover {
+  text-decoration: underline;
+}
+
+.radio {
+  margin-top: 0;
+}
+
+#results {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#results img {
+  width: 100%;
+}

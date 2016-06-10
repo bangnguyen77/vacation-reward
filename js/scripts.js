@@ -1,6 +1,9 @@
-$(document).ready(function() {
+// var vacation1 = Yosemite National Park;
 
+$(document).ready(function() {
   $("#survey form").submit(function(event) {
+    event.preventDefault();
+
     var nameInput = $("input#name").val();
     var showInput = $("select#show").val();
     var actorInput = $("select#actor").val();
@@ -8,9 +11,18 @@ $(document).ready(function() {
     var beverageInput = $("select#beverage").val();
     var carInput = $("select#car").val();
 
-    var vacation1 = Yosemite National Park;
-    var vacation2 = Bahamas;
-    var vacation3 = Paris;
+
+    // var vacation2 = bahamas;
+    // var vacation3 = paris;
+
+    // if (activities !== "playing" && activities !== "dunes") {
+    //   if (food === "tacos" || personality === "friendly" || activities === "rodeo") {
+    //   $("#houston").show();
+    //   } else if (food === "bagels" || personality === "aggressive" || activities === "walking") {
+    //   $("#nyc").show();
+    // } else {
+    //   $("#canada").show();
+    // }
 
     if (showInput === "The Americans" && actorInput === "Adam Sandler") {
       $("#yosemite").fadeIn();
@@ -20,8 +32,9 @@ $(document).ready(function() {
       $("#survey").hide();
       $("#award").show();
       $(".name").text(nameInput).show();
-      $(".award").text(vacation1);
-      } else if (showInput === "Broad City" && actorInput === "Julianne Moore") {
+      // $(".vacation1").text(vacation1).show();
+    }
+      else if (showInput === "Broad City" && actorInput === "Julianne Moore") {
         $("#yosemite").fadeOut();
         $("#bahamas").fadeIn();
         $("#paris").fadeOut();
@@ -29,8 +42,9 @@ $(document).ready(function() {
         $("#survey").hide();
         $("#award").show();
         $(".name").text(nameInput).show();
-        $(".award").text(vacation2);
-        } else if (showInput === "American Crime Story" && actorInput === "Robert Downey Jr.") {
+        // $(".award").text(vacation2);
+      }
+        else if (showInput === "American Crime Story" && actorInput === "Robert Downey Jr.") {
           $("#yosemite").fadeOut();
           $("#bahamas").fadeOut();
           $("#paris").fadeIn();
@@ -39,12 +53,13 @@ $(document).ready(function() {
           $("#award").show();
           $(".name").text(nameInput).show();
           $(".award").text(vacation3);
-          } else {
+        }
+          else {
             $("#survey").hide();
             $("#award").show().text("You need to watch more advertising!");
-            }
+          }
 
-    event.preventDefault();
+
   });
 
 });
